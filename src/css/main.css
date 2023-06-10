@@ -1,0 +1,116 @@
+  
+  body{
+    margin: 0px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.webgl{
+  position: fixed;
+    width: 100%;
+    height: 100%;
+
+}
+#timer{
+  position: absolute;
+  bottom:5px;
+  left:0px;
+  width:100%;
+  z-index: 5;
+}
+
+.text {
+  font-size: 30px;
+  margin-left: 20px;
+  display: inline-block;
+  color: rgb(254, 254, 254);
+  z-index: 10000;
+}
+
+#bord{
+  position: absolute;
+  bottom:5px;
+  left:0px;
+  width:100%;
+  z-index: 5;
+}
+
+.timertext {
+  font-size: 30px;
+  margin-left: 20px;
+  display: inline-block;
+  color: rgb(254, 254, 254);
+  z-index: 10000;
+}
+@import url(https://fonts.googleapis.com/css?family=Amatic+SC);
+
+body {
+	font-family: 'Amatic SC', cursive;
+	background-color: #111111;
+	color: #cccccc;
+}
+
+/*Game*/
+  #blocker{
+    position:fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.80);
+    z-index: 1;
+}
+#loser{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/LoseScreen.jpg);
+  background-size: cover;
+  background-position: center;
+  z-index: 5!important;
+}
+
+#won{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/WinScreen.jpg);
+    background-size: cover;
+    background-position: center;
+    z-index: 5!important;
+}
+
+
+h2{
+  text-decoration: underline;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+font-size: 50px;
+color: rgb(0, 0, 0);
+margin-top: 580px;
+margin-left: 650px;
+
+
+}
+
+#instructions {
+    width: 100%;
+	height: 100%;
+
+	display: -webkit-box;
+	display: -moz-box;
+	display: box;
+
+	-webkit-box-orient: horizontal;
+	-moz-box-orient: horizontal;
+	box-orient: horizontal;
+
+	-webkit-box-pack: center;
+	-moz-box-pack: center;
+	box-pack: center;
+
+	-webkit-box-align: center;
+	-moz-box-align: center;
+	box-align: center;
+
+	color: #ffffff;
+	text-align: center;
+
+	cursor: pointer;
+}

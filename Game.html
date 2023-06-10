@@ -1,0 +1,78 @@
+<!--Author: Nicole Castañeda Garcia, Mayra Selena Delgado 
+Date of creation:23/03/2023
+ -->
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FightTheCurrent</title>
+    <link rel="icon" type="src/image/png" href="./src/img/juego-de-mesa.png">
+    <!--<link rel="stylesheet" href="./src/css/Style.css">-->
+    <script src="./src/vendors/three.js-master/build/three.js"></script> <!--Definición básica de la libreria (WebGL)-->
+    <script src="./src/vendors/three.js-master/build/three.min.js"></script>
+    <script src="./src/vendors/load/FBXLoader.js"></script>
+    <script src="./src/vendors/three.js-master/build/three.module.js"></script>
+    <script src="./src/vendors/three.js-master/build/MathUtils.js"></script>
+    <script src="./src/vendors/three.js-master/build/Box3.js"></script>
+     <!-- Loader GLTF, OBJ Y MTL-->
+    <script src="./src/vendors/load/MTLLoader.js"></script>
+    <script src="./src/vendors/load/OBJLoader.js"></script>
+    <script src="./src/vendors/load/DRACOLoader.js"></script>
+    <script src="./src/vendors/load/GLTFLoader.js"></script>
+
+    <script src="./src/libs/OrbitControls.js"></script> <!--Interacción con el mouse (Zoom,camera movement, etc.)-->
+    <!--<script src="./src/libs/dat.gui.module.js"></script>-->
+    <!--<script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"></script>-->
+    <link rel="stylesheet" href="./src/css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="icon" type="src/image/png" href="./src/img/a.png">
+</head>
+
+
+<body onload="start3dService()">
+    
+    <canvas width="800" height="600" class="webgl"></canvas>
+    <audio src="./sounds/Adventure.mp3" autoplay="autoplay" loop="loop"></audio>
+
+    <div id="cointainerOthers" style="display: none;">
+        <div id="timer">
+            <span class="timertext">Timer</span>  
+            <span class="timertext" id="minutes">00</span>
+            <span class="timertext" id="break">:</span>
+            <span class="timertext" id="seconds">00</span>
+            <span class="timertext" id="end"></span>
+            <span class="timertext" id="bad"></span>
+            <span class="timertext" id="border"></span>
+        </div>
+    </div>
+
+   <!-- <div id="cointainerOthers" style="display: none;">
+        <div id="bord" style="display: none;">
+        </div></div>-->
+
+    <div id="won" style="display: none;">
+        <audio src="./sounds/Win.mp3" autoplay="autoplay" loop="loop"></audio>
+        <div id="instructions">
+            <h2><a href="Start.html">Menu</a></h2>
+        </div>
+
+        <!--<div id="loser">
+            <audio src="./sounds/Lose.mp3" autoplay="autoplay" loop="loop"></audio>
+            <div id="instructions">
+                <h2> <a href="Game.html">Try again!</a></h2>
+            </div>
+            </div>-->
+
+    <script src="./src/js/main.js"></script>
+    
+</body>
+</html>

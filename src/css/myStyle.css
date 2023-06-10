@@ -1,0 +1,30 @@
+body {
+    background-image: url(../img/Menu.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+  }
+
+  h2{
+    text-decoration: underline;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 50px;
+  color: aliceblue;
+  margin-top: 235px;
+  margin-left: 200px;
+
+
+  }
+
+  h3{
+    text-decoration: underline;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 50px;
+  color: aliceblue;
+  margin-top: 10px;
+  margin-left: 130px;
+  }
+
+
+

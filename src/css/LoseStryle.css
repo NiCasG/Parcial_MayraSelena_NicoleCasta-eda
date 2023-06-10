@@ -1,0 +1,18 @@
+body {
+    background-image: url(../img/LoseScreen.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+  }
+
+  h2{
+    text-decoration: underline;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 50px;
+  color: aliceblue;
+  margin-top: 580px;
+  margin-left: 685px;
+
+
+  }
